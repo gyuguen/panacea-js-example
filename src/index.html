@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Send Token</title>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Send Token</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/nft.html">NFT Manage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/my_nft.html">My NFT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/nft_exchange.html">NFT Exchange</a>
+            </li>
+        </ul>
+        <h1>Send Token</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="sender" class="form-label">Sender</label>
+                <input type="text" class="form-control" id="sender" readonly>
+            </div>
+            <div class="col-md-6">
+                <label for="senderAmount" class="form-label">Amount</label>
+                <div class="input-group col-md-6">
+                    <input type="text" class="form-control" id="senderAmount" readonly>
+                    <span class="input-group-text">MED</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="recipient" class="form-label">Recipient</label>
+                <input type="text" class="form-control" id="recipient">
+            </div>
+            <div class="col-md-6">
+                <label for="recipientAmount" class="form-label">Amount</label>
+                <div class="input-group col-md-6">
+                    <input type="text" class="form-control" id="recipientAmount" readonly>
+                    <span class="input-group-text">MED</span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="amount" class="form-label">Send Amount</label>
+                <div class="input-group col-md-6">
+                    <input type="text" class="form-control" id="amount">
+                    <span class="input-group-text">MED</span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-dark" id="send">SEND</button>
+                <div class="spinner-border" role="status" id="loading" style="display: none;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
